@@ -1,0 +1,22 @@
+#root {
+  /* Color */
+
+  /* Text */
+
+  /* Animation */
+
+  /* Border */
+}
+
+*,
+*::before,
+*::after {
+  min-width: 0;
+}
+
+html {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
