@@ -6,3 +6,7 @@ test('User can Sign Into the application with it\'s email and password', async (
     const SignIn = (email: string, password: string): boolean => (email == 'user' && password == 'user') ? true : false
     expect(SignIn('user', 'user')).toBe(true)
 })
+
+test.todo('User can Sign Up with an email and password', async () => {
+
+})

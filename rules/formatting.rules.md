@@ -88,7 +88,7 @@ const UserName: string = 'Dante' ❌
 const user_name: string = 'Dante' ✅
 ```
 
-`Functions are named in PascalCase`
+`Functions/Interfaces/Types are named in PascalCase`
 ```TypeScript
 function sayHello(): void { ❌
     console.log('Hello')
@@ -107,6 +107,12 @@ function SayHello(): void { ✅
 }
 
 const SayHello = (): void => console.log('Hello') ✅
+
+interface IUser {} ❌
+type TUser {} ❌
+
+interface IUser {} ✅
+type TUser {} ✅
 ```
 
 

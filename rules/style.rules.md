@@ -1,5 +1,17 @@
 # Style Rules
 
+`Use Mobile First Design`
+```CSS
+/* Base Rules - Mobile */
+...
+
+/* Tablet Rules */
+@media screen and (min-width: 700) {}
+
+/* Desktop Rules */
+@media screen and (min-width: 1200) {}
+```
+
 `Use the :root selector to create custom properties`
 ```CSS
 #root {
@@ -45,4 +57,15 @@ button {
 @media screen and (min-width: 1020px) {} ❌
 
 @media screen and (min-width: 63.75em) {} ✅
+
+/* Here's a px to em converter */
+(px converter)[https://nekocalc.com/px-to-em-converter]
+/* NOTE: Remember that rem and em are the same converted from px.
+Example:
+px    | em
+700px | 43.75em
+-----------------
+px    | rem
+700px | 43.75rem
+*/
 ```
