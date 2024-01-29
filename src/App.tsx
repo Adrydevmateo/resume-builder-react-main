@@ -1,18 +1,17 @@
-import HomePage from '@pages/home/Home-Page'
-import HeaderComp from '@components/header/Header-Comp'
-import { Route } from 'wouter'
+import { UserState, userActions } from "./user/user.module";
 
 function App() {
+  const { id, setId } = UserState();
+  const { signIN }: any = userActions;
 
   return (
     <>
-      <HeaderComp />
-
-      <div>
-        <Route path='/' component={HomePage} />
-      </div>
+      <h1>Welcome {id}</h1>
+      <button onClick={() => signIN("example@email.com", "password123")}>
+        Sign In
+      </button>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
